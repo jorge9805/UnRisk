@@ -6,23 +6,42 @@
 package Mapa;
 
 import java.util.ArrayList;
+import unrisk.Jugador;
 
 /**
  *
  * @author admin
  */
-public abstract class Facultad {
+public class Facultad {
 
-    private String nombre;
-    private int bonusArmies; 
-    private ArrayList<Facultad> fronteras;
+    private String name;
+    private int bonusArmies;
     private ArrayList<Edificios> Edificios;
 
-    public Facultad(String nombre, ArrayList<Facultad> fronteras) {
-        this.nombre = nombre;
-        this.fronteras = fronteras;
+    public Facultad(String name, int bonusArmies, ArrayList<Edificios> memberEdificios) {
+		this.name = name;
+		this.bonusArmies = bonusArmies;
+		Edificios = memberEdificios;
+		
+		System.out.println("Created continent: " + name + "\nBonus armies: " + bonusArmies);
     }
 
-    public abstract void addFrontera();
+    public String getName() {
+		return name;
+    }
 
+    /**
+     *  Returns the number of bonus armies a player gets per round when the player controls this
+     * continent
+     **/
+    public int getBonusArmies() {
+		return bonusArmies;
+    }
+
+    /**
+     * Retuens a list of the country objects that are on this continent
+     **/
+    public ArrayList<Edificios> getMemberEdificios() {
+		return Edificios;
+    }
 }
