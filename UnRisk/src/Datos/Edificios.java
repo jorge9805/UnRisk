@@ -8,15 +8,14 @@ public class Edificios {
     private boolean hasPlayer;
     private String name;
     private Jugador occupant;
-    private ArrayList<Edificios> adjacencies;
+    private ArrayList<Edificios> adjacentes;
 
-    public Edificios(String name) {
+    public Edificios(String name,ArrayList<Edificios> contiguos) {
 
         this.name = name;
         hasPlayer = false;
         armies = 0;
-        this.adjacencies= new ArrayList<>(); 
-
+        adjacentes= contiguos; 
         System.out.println("Created country: " + name);
     }
 
@@ -24,9 +23,9 @@ public class Edificios {
      * Used only when contstructing the country object, it should not be called
      * after the board is initialized
      */
-    public void addAdjacencies(ArrayList<Edificios> adjacencies) {
+    public void addAdjacencies(ArrayList<Edificios> adjacentes) {
 
-        this.adjacencies = adjacencies;
+        this.adjacentes = adjacentes;
     }
 
     public String getName() {
@@ -75,8 +74,8 @@ public class Edificios {
      * Returns a list of the country objects that are adjacent to this country
      * on the baord
      */
-    public ArrayList<Edificios> getAdjacencies() {
-        return adjacencies;
+    public ArrayList<Edificios> getAdjacentes() {
+        return adjacentes;
     }
 
     public boolean hasPlayer() {
