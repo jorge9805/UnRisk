@@ -10,6 +10,6 @@ package unrisk;
  * @author MASTER
  */
 public class RiskControler {
-    //Facultad artes= new Facultad ()
+    //Facultad artes= new Facultad (); 
     
 }
