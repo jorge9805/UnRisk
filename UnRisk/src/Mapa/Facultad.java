@@ -15,7 +15,7 @@ public abstract class Facultad {
 
     private String nombre;
     private int bonusArmies; 
-    private ArrayList<Facultad> fronteras;
+    protected ArrayList<Facultad> fronteras;
     private ArrayList<Edificios> Edificios;
 
     public Facultad(String nombre, ArrayList<Facultad> fronteras) {
@@ -23,6 +23,6 @@ public abstract class Facultad {
         this.fronteras = fronteras;
     }
 
-    public abstract void addFrontera();
+    public abstract void addFrontera(Facultad front1,Facultad front2,Facultad front3);
 
 }
