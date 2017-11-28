@@ -1,16 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Datos;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author admin
- */
 public class Edificios {
 
     private int armies;
@@ -32,7 +23,6 @@ public class Edificios {
     /**
      * Used only when contstructing the country object, it should not be called
      * after the board is initialized
-     *
      */
     public void addAdjacencies(ArrayList<Edificios> adjacencies) {
 
@@ -43,12 +33,9 @@ public class Edificios {
         return name;
     }
 
-    
-
     /**
      * When a player conquers a country the player object is set as the occupant
      * of the country
-     *
      */
     public void setOccupant(Jugador occupant) {
         hasPlayer = true;
@@ -57,7 +44,6 @@ public class Edificios {
 
     /**
      * Returns the player object who currently occupies the country
-     *
      */
     public Jugador getOccupant() {
         return occupant;
@@ -65,17 +51,14 @@ public class Edificios {
 
     /**
      * Used to set the number of armies currently stationed in this country
-     *
      */
     public void setNumArmies(int numArmies) {
         armies = numArmies;
     }
-
     public void incrementArmies(int numArmies) {
         armies = armies + numArmies;
         System.out.println(occupant.getName() + " added " + numArmies + " armies to " + name + ".");
     }
-
     public void decrementArmies(int numArmies) {
         armies = armies - numArmies;
         System.out.println(occupant.getName() + " lost " + numArmies + " armies in " + name + ".");
@@ -83,7 +66,6 @@ public class Edificios {
 
     /**
      * Returns the number of armies currently stationed in this country
-     *
      */
     public int getArmies() {
         return armies;
@@ -92,7 +74,6 @@ public class Edificios {
     /**
      * Returns a list of the country objects that are adjacent to this country
      * on the baord
-     *
      */
     public ArrayList<Edificios> getAdjacencies() {
         return adjacencies;
