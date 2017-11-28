@@ -4,17 +4,21 @@
  * and open the template in the editor.
  */
 package unrisk;
+
+import Datos.Edificios;
+import Datos.Facultad;
 import Interfaz.ControlInterfaz;
 import Interfaz.DatosInterfaz;
 import Interfaz.Pantalla;
 import Interfaz.Pantallainicio;
+import java.util.ArrayList;
 import javax.swing.JFrame;
+
 /**
  *
  * @author admin
  */
-public class UnRisk extends JFrame{
-    
+public class UnRisk extends JFrame {
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -43,11 +47,29 @@ public class UnRisk extends JFrame{
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                DatosInterfaz datos = new DatosInterfaz(datos.getContarjugadores());
-                ControlInterfaz control=new ControlInterfaz(datos);
-                
-            }
-        });
+                /*DatosInterfaz datos = new DatosInterfaz(datos.getContarjugadores());
+                ControlInterfaz control = new ControlInterfaz(datos);*/
+            ArrayList<Edificios> EdificiosArtes = null;
+            
+            Edificios Arquitectura = new Edificios("Arquitectura");
+            Edificios BellasArtes = new Edificios("BellasArtes");
+            Edificios Conservatorio = new Edificios("Conservatorio");
+            Edificios Museo = new Edificios("Museo de Arte");
+            Edificios Aulas = new Edificios("Aulas de Construiccion");
+
+           
+                EdificiosArtes.add(Arquitectura);
+                EdificiosArtes.add(BellasArtes);
+                EdificiosArtes.add(Conservatorio);
+                EdificiosArtes.add(Museo);
+                EdificiosArtes.add(Aulas);
+            
+
+            Facultad artes = new Facultad("Artes", 5, EdificiosArtes);
+        }
+    }
+
+
+);
     }
 }
-

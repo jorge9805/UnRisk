@@ -15,6 +15,8 @@ public class Pantallaprincipal {
         public static void main(String[] args) {
         UnRisk ex = new UnRisk();
         ex.setVisible(true);
+        
+        
        
     }
 }

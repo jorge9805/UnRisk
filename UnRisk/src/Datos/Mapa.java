@@ -15,7 +15,7 @@ import java.util.ArrayList;
  */
 public class Mapa {
 
-    private ArrayList<Edificios> EdificiosArtes;
+    /*private ArrayList<Edificios> EdificiosArtes;
 
     public Mapa() {
         this.EdificiosArtes = new ArrayList<>();
@@ -36,5 +36,7 @@ public class Mapa {
     }
 
     Facultad artes = new Facultad("Artes", 5, EdificiosArtes);
+    */
+    
 
 }
