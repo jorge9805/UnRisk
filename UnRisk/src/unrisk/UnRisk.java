@@ -12,7 +12,7 @@ import javax.swing.JFrame;
 public class UnRisk extends JFrame {
 
     public static void main(String args[]) {
-          ArrayList<Edificios> Artes = null;
+          /*ArrayList<Edificios> Artes = null;
             
             ArrayList<Edificios> contiguosArquitectura = null;
             Edificios Arquitectura = new Edificios("Arquitectura" );
@@ -37,7 +37,7 @@ public class UnRisk extends JFrame {
                Artes.add(Aulas);
             
 
-            Facultad artes = new Facultad("Artes", 5, Artes);
+            Facultad artes = new Facultad("Artes", 5, Artes);*/
         }
     }
         
