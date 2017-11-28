@@ -142,7 +142,7 @@ public class Jugador {
 		hand.removeCardsFromHand(cardsTurnedInIndex[0], cardsTurnedInIndex[1], cardsTurnedInIndex[2]);
     }*/
 	
-	public ArrayList<Edificios> getOwnedCountries() {
+	public ArrayList<Edificios> getEdificiosPoseidos() {
 	
 		return new ArrayList<Edificios>(EdificiosTenidos.values());
 	}
