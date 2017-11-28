@@ -77,8 +77,3 @@ public class UnRisk extends JFrame {
             Facultad artes = new Facultad("Artes", 5, Artes);
         }
     }
-
-
-);
-    }
-}
