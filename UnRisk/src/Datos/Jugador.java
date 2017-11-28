@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package unrisk;
+package Datos;
 
-import Mapa.Edificios;
-import Mapa.Facultad;
+import Datos.Edificios;
+import Datos.Facultad;
 import java.util.ArrayList;
 import java.util.HashMap;
 

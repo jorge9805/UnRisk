@@ -8,7 +8,7 @@ import java.awt.Component;
 import java.awt.event.ActionEvent;
 import javax.swing.JFrame;
 import java.awt.event.ActionListener;
-import unrisk.Jugador;
+import Datos.Jugador;
 /**
  *
  * @author admin
