@@ -10,13 +10,12 @@ public class Edificios {
     private Jugador occupant;
     private ArrayList<Edificios> adjacentes;
 
-    public Edificios(String name,ArrayList<Edificios> contiguos) {
+    public Edificios(String name) {
 
         this.name = name;
-        hasPlayer = false;
-        armies = 0;
-        adjacentes= contiguos; 
-        System.out.println("Created country: " + name);
+        this.hasPlayer = false;
+        this.armies = 0;
+        System.out.println("Edificio creado: " + name);
     }
 
     /**
