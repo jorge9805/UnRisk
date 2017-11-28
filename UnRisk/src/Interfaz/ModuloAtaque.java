@@ -92,7 +92,7 @@ public class ModuloAtaque extends javax.swing.JFrame {
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, -1, -1));
 
         jTextField4.setText("tropasDefendiendo");
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 250, -1, -1));
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 250, 60, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
