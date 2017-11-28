@@ -25,12 +25,10 @@ public class Jugador {
         this.soldadosfaltantes = soldadosfaltantes;
     }*/
     
-    private boolean isAI;
 
     private int armies;
-	private int turnInCount;
-	private int index;
-
+    private int turnInCount;
+    private int index;
     private String name;
 		
     private HashMap<String, Edificios> EdificiosTenidos;
@@ -38,18 +36,13 @@ public class Jugador {
 	
 	//private Hand hand;
 
-    public Jugador(String name, int armies, int index, boolean isAI) {
+    public Jugador(String name, int armies, int index) {
 	
 		this.name = name;
 		this.armies = armies;
 		this.index = index;
-		this.isAI = isAI;
-		
 		EdificiosTenidos = new HashMap<String, Edificios>();
 		Facultadestenidas = new HashMap<String, Facultad>();
-		
-		//hand = new Hand();
-		
 		turnInCount = 0;
     }
 	
@@ -65,9 +58,6 @@ public class Jugador {
 		return armies;
 	}
 	
-	public boolean getAI() {
-		return isAI;
-	}
 	
     /**
      * Decreases the count of the number of numArmies the player has on the board

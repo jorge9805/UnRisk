@@ -15,7 +15,6 @@ public class Edificios {
 
     private int armies;
     private boolean hasPlayer;
-
     private String name;
     private Jugador occupant;
     private ArrayList<Edificios> adjacencies;
