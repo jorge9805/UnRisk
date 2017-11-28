@@ -5,10 +5,22 @@
  */
 package Mapa;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author admin
  */
 public class Edificios {
+    private String name;
+    //private Player occupant;
+    private ArrayList<Edificios> adjacencies;
+
+    public Edificios(String name, ArrayList<Edificios> adjacencies) {
+        this.name = name;
+        this.adjacencies = adjacencies;
+    }
+    
+    
     
 }

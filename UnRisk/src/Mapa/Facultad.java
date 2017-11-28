@@ -5,10 +5,24 @@
  */
 package Mapa;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author admin
  */
-public class Facultad {
-    
+public abstract class Facultad {
+
+    private String nombre;
+    private int bonusArmies; 
+    private ArrayList<Facultad> fronteras;
+    private ArrayList<Edificios> Edificios;
+
+    public Facultad(String nombre, ArrayList<Facultad> fronteras) {
+        this.nombre = nombre;
+        this.fronteras = fronteras;
+    }
+
+    public abstract void addFrontera();
+
 }
