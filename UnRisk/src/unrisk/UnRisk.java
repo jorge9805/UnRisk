@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package unrisk;
+import Interfaz.ControlInterfaz;
+import Interfaz.DatosInterfaz;
+import Interfaz.Pantalla;
 import Interfaz.Pantallainicio;
 import javax.swing.JFrame;
 /**
@@ -40,9 +43,11 @@ public class UnRisk extends JFrame{
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Pantallainicio pantallainicio = new Pantallainicio();
-                pantallainicio.setVisible(true);
+                DatosInterfaz datos = new DatosInterfaz(datos.getContarjugadores());
+                ControlInterfaz control=new ControlInterfaz(datos);
+                
             }
         });
     }
 }
+
