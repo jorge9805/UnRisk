@@ -1,46 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Datos;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author admin
- */
 public class Facultad {
-
     private String name;
     private int bonusArmies;
     private ArrayList<Edificios> Edificios;
 
     public Facultad(String name, int bonusArmies, ArrayList<Edificios> memberEdificios) {
-		this.name = name;
-		this.bonusArmies = bonusArmies;
-		Edificios = memberEdificios;
-		
-		System.out.println("Created continent: " + name + "\nBonus armies: " + bonusArmies);
+	this.name = name;
+	this.bonusArmies = bonusArmies;
+	this.Edificios = memberEdificios;
+	System.out.println("Se ha creado la facultad de " + name + "\nBunus de ejercitos: " + bonusArmies);
     }
 
     public String getName() {
-		return name;
+	return name;
     }
 
     /**
      *  Returns the number of bonus armies a player gets per round when the player controls this
-     * continent
+     * faculty
      **/
     public int getBonusArmies() {
-		return bonusArmies;
+	return bonusArmies;
     }
 
     /**
      * Retuens a list of the country objects that are on this continent
      **/
-    public ArrayList<Edificios> getMemberEdificios() {
-		return Edificios;
+    public ArrayList<Edificios> getEdificios() {
+	return Edificios;
     }
 }
