@@ -24,6 +24,7 @@ public class Edificios {
         this.name = name;
         hasPlayer = false;
         armies = 0;
+        this.adjacencies= new ArrayList<>(); 
 
         System.out.println("Created country: " + name);
     }
